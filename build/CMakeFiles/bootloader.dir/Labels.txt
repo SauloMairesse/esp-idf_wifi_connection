@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+/home/saulo/Desktop/esp/esp-aws-iot/examples/personal_examples/wifi_connection/build/CMakeFiles/bootloader
+/home/saulo/Desktop/esp/esp-aws-iot/examples/personal_examples/wifi_connection/build/CMakeFiles/bootloader.rule
+/home/saulo/Desktop/esp/esp-aws-iot/examples/personal_examples/wifi_connection/build/CMakeFiles/bootloader-complete.rule
+/home/saulo/Desktop/esp/esp-aws-iot/examples/personal_examples/wifi_connection/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+/home/saulo/Desktop/esp/esp-aws-iot/examples/personal_examples/wifi_connection/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+/home/saulo/Desktop/esp/esp-aws-iot/examples/personal_examples/wifi_connection/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+/home/saulo/Desktop/esp/esp-aws-iot/examples/personal_examples/wifi_connection/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+/home/saulo/Desktop/esp/esp-aws-iot/examples/personal_examples/wifi_connection/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+/home/saulo/Desktop/esp/esp-aws-iot/examples/personal_examples/wifi_connection/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+/home/saulo/Desktop/esp/esp-aws-iot/examples/personal_examples/wifi_connection/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule

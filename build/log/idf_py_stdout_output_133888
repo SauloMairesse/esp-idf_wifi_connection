@@ -1,0 +1,78 @@
+[1/10] Performing build step for 'bootloader'
+[1/1] cd /home/saulo/Desktop/esp/esp-aws-iot/examples/personal_examples/wifi_connection/build/bootloader/esp-idf/esptool_py && /home/saulo/.espressif/python_env/idf5.2_py3.10_env/bin/python /home/saulo/Desktop/esp/esp-aws-iot/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /home/saulo/Desktop/esp/esp-aws-iot/examples/personal_examples/wifi_connection/build/bootloader/bootloader.bin
+Bootloader binary size 0x6910 bytes. 0x6f0 bytes (6%) free.
+[2/8] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/wifi_connection.c.obj
+[3/8] Linking C static library esp-idf/main/libmain.a
+[4/8] Generating ld/sections.ld
+[5/8] Linking CXX executable wifi_connection.elf
+[6/8] Generating binary image from built executable
+esptool.py v4.7.dev1
+Creating esp32 image...
+Merged 26 ELF sections
+Successfully created esp32 image.
+Generated /home/saulo/Desktop/esp/esp-aws-iot/examples/personal_examples/wifi_connection/build/wifi_connection.bin
+[7/8] cd /home/saulo/Desktop/esp/esp-aws-iot/examples/personal_examples/wifi_connection/build/esp-idf/esptool_py && /home/saulo/.espressif/python_env/idf5.2_py3.10_env/bin/python /home/saulo/Desktop/esp/esp-aws-iot/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/saulo/Desktop/esp/esp-aws-iot/examples/personal_examples/wifi_connection/build/partition_table/partition-table.bin /home/saulo/Desktop/esp/esp-aws-iot/examples/personal_examples/wifi_connection/build/wifi_connection.bin
+wifi_connection.bin binary size 0xb9550 bytes. Smallest app partition is 0x100000 bytes. 0x46ab0 bytes (28%) free.
+[7/8] cd /home/saulo/Desktop/esp/esp-aws-iot/esp-idf/components/esptool_py && /usr/bin/cmake -D IDF_PATH=/home/saulo/Desktop/esp/esp-aws-iot/esp-idf -D "SERIAL_TOOL=/home/saulo/.espressif/python_env/idf5.2_py3.10_env/bin/python;;/home/saulo/Desktop/esp/esp-aws-iot/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/home/saulo/Desktop/esp/esp-aws-iot/examples/personal_examples/wifi_connection/build -P /home/saulo/Desktop/esp/esp-aws-iot/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool.py --chip esp32 -p /dev/ttyUSB0 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 2MB 0x1000 bootloader/bootloader.bin 0x10000 wifi_connection.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.7.dev1
+Serial port /dev/ttyUSB0
+Connecting....
+Chip is ESP32-D0WD (revision v1.0)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: cc:db:a7:fa:45:78
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x000c9fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Compressed 26896 bytes to 16887...
+Writing at 0x00001000... (50 %)
+Writing at 0x0000768a... (100 %)
+Wrote 26896 bytes (16887 compressed) at 0x00001000 in 0.9 seconds (effective 241.7 kbit/s)...
+Hash of data verified.
+Compressed 759120 bytes to 490697...
+Writing at 0x00010000... (3 %)
+Writing at 0x0001b9fa... (6 %)
+Writing at 0x00024a15... (10 %)
+Writing at 0x00029f11... (13 %)
+Writing at 0x00033fc1... (16 %)
+Writing at 0x00039a4a... (20 %)
+Writing at 0x0003f4e8... (23 %)
+Writing at 0x00044bf2... (26 %)
+Writing at 0x0004a58e... (30 %)
+Writing at 0x0005000d... (33 %)
+Writing at 0x00055ccf... (36 %)
+Writing at 0x0005b0af... (40 %)
+Writing at 0x000604a5... (43 %)
+Writing at 0x00065955... (46 %)
+Writing at 0x0006ac5b... (50 %)
+Writing at 0x00070349... (53 %)
+Writing at 0x00075a6b... (56 %)
+Writing at 0x0007b8be... (60 %)
+Writing at 0x00080e88... (63 %)
+Writing at 0x00086643... (66 %)
+Writing at 0x0008be52... (70 %)
+Writing at 0x000915d1... (73 %)
+Writing at 0x00096de6... (76 %)
+Writing at 0x0009c816... (80 %)
+Writing at 0x000a2473... (83 %)
+Writing at 0x000a7f55... (86 %)
+Writing at 0x000ae14a... (90 %)
+Writing at 0x000b7b1f... (93 %)
+Writing at 0x000be6b1... (96 %)
+Writing at 0x000c4207... (100 %)
+Wrote 759120 bytes (490697 compressed) at 0x00010000 in 11.1 seconds (effective 546.4 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.1 seconds (effective 327.9 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
